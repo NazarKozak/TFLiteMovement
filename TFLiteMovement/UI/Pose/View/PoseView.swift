@@ -32,5 +32,6 @@ struct PoseView: View {
                             delegate: $dataModel.delegate)
             }
         }
+        .preferredColorScheme(.dark)
     }
 }

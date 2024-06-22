@@ -25,7 +25,7 @@ class PoseNetProcessor {
         self.delegate = delegate
         self.updateModel()
 
-        print("Running model on: \(modelType), delegate: \(delegate)")
+        os_log("Running model on: \(modelType), delegate: \(delegate), with: \(threadCount) threads")
     }
 
     /// Call this method when there's change in pose estimation model config, including changing model

@@ -35,6 +35,15 @@ struct PoseViewHUD: View {
 
     private var controlsView: some View {
         VStack {
+            Stepper(value: $threadCount, in: 1...8) {
+                HStack {
+                    Text("Thread Count")
+                    Spacer()
+                    Text("\(threadCount)")
+                        .padding(.trailing, 8)
+                }
+            }
+
             Picker(selection: $delegate) {
                 ForEach(Delegates.allCases, id: \.self) { delegate in
                     Text(delegate.rawValue)
