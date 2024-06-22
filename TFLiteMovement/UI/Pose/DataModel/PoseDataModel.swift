@@ -13,15 +13,13 @@ class PoseDataModel {
     var currentFrame: CGImage?
     var data: PoseViewData?
 
-    var modelType: ModelType = .movenetThunder
-    var threadCount: Int = 4
-    var delegate: Delegates = .gpu
+    var modelType: ModelType = .movenetThunder { didSet { updateModel() } }
+    var threadCount: Int = 4 { didSet { updateModel() } }
+    var delegate: Delegates = .gpu { didSet { updateModel() } }
 
     private let cameraManager = CameraManager()
     @ObservationIgnored
-    lazy var poseNet: PoseNetProcessor = {
-        return PoseNetProcessor(modelType: modelType, threadCount: threadCount, delegate: delegate)
-    }()
+    private var poseNet = PoseNetProcessor(modelType: .movenetThunder, threadCount: 4, delegate: .gpu)
 
     init() {
         handleCameraPreviews()
@@ -34,6 +32,14 @@ class PoseDataModel {
                     currentFrame = image
                 }
                 data = poseNet.runModel(buffer)
+            }
+        }
+    }
+
+    func updateModel() {
+        Task {
+            await MainActor.run {
+                poseNet = PoseNetProcessor(modelType: modelType, threadCount: threadCount, delegate: delegate)
             }
         }
     }
