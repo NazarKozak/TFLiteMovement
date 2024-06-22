@@ -63,8 +63,8 @@ struct PoseViewCanvasOverlay: View {
         // MARK: Visualization of detection result
         var bodyPartToDotMap: [BodyPart: CGPoint] = [:]
         for (index, part) in BodyPart.allCases.enumerated() {
-            let position = CGPoint(x: person.keyPoints[index].coordinate.x / scale.x,
-                                   y: person.keyPoints[index].coordinate.y / scale.y)
+            let position = CGPoint(x: person.keyPoints[index].coordinate.x * scale.x,
+                                   y: person.keyPoints[index].coordinate.y * scale.y)
             bodyPartToDotMap[part] = position
             strokes.dots.append(position)
         }

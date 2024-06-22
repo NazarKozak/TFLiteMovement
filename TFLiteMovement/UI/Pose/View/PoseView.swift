@@ -17,8 +17,8 @@ struct PoseView: View {
                 .overlay {
                     GeometryReader { proxy in
                         if let person = dataModel.data?.person, let image = dataModel.currentFrame {
-                            let scale = CGPoint(x: CGFloat(image.width) / proxy.size.width,
-                                                y: CGFloat(image.height) / proxy.size.height)
+                            let scale = CGPoint(x: proxy.size.width / CGFloat(image.width),
+                                                y: proxy.size.height / CGFloat(image.height))
                             PoseViewCanvasOverlay(person: person,
                                                   scale: scale)
                         }
