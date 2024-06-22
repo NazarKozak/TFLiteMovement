@@ -11,7 +11,7 @@ import SwiftUI
 struct TFLiteMovementApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PoseView()
         }
     }
 }

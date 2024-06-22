@@ -8,17 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		668A5D132C24D39B00282BA5 /* TFLiteMovementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D122C24D39B00282BA5 /* TFLiteMovementApp.swift */; };
-		668A5D152C24D39B00282BA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D142C24D39B00282BA5 /* ContentView.swift */; };
+		668A5D152C24D39B00282BA5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D142C24D39B00282BA5 /* CameraView.swift */; };
 		668A5D172C24D39C00282BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668A5D162C24D39C00282BA5 /* Assets.xcassets */; };
 		668A5D1A2C24D39C00282BA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668A5D192C24D39C00282BA5 /* Preview Assets.xcassets */; };
+		668A5D2F2C24ED1800282BA5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D2E2C24ED1800282BA5 /* CameraManager.swift */; };
+		668A5D342C24EEAB00282BA5 /* PoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D332C24EEAB00282BA5 /* PoseView.swift */; };
+		668A5D362C24EED600282BA5 /* PoseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D352C24EED600282BA5 /* PoseDataModel.swift */; };
+		668A5D542C26073500282BA5 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D4C2C26073500282BA5 /* PoseNet.swift */; };
+		668A5D552C26073500282BA5 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D4D2C26073500282BA5 /* PoseData.swift */; };
+		668A5D562C26073500282BA5 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D4E2C26073500282BA5 /* MoveNet.swift */; };
+		668A5D572C26073500282BA5 /* posenet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 668A5D4F2C26073500282BA5 /* posenet.tflite */; };
+		668A5D582C26073500282BA5 /* movenet_thunder.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 668A5D502C26073500282BA5 /* movenet_thunder.tflite */; };
+		668A5D592C26073500282BA5 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D512C26073500282BA5 /* PoseConfig.swift */; };
+		668A5D5A2C26073500282BA5 /* movenet_lightning.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 668A5D522C26073500282BA5 /* movenet_lightning.tflite */; };
+		668A5D5B2C26073500282BA5 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D532C26073500282BA5 /* PoseEstimator.swift */; };
+		668A5D5F2C262D5400282BA5 /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D5C2C262D5400282BA5 /* CVPixelBuffer+TFLite.swift */; };
+		668A5D602C262D5400282BA5 /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D5D2C262D5400282BA5 /* Data+TFLite.swift */; };
+		668A5D632C262F9200282BA5 /* PoseNetProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D622C262F9200282BA5 /* PoseNetProcessor.swift */; };
+		668A5D692C2634C300282BA5 /* PoseViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D682C2634C300282BA5 /* PoseViewData.swift */; };
+		668A5D6B2C26403100282BA5 /* PoseViewCanvasOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D6A2C26403100282BA5 /* PoseViewCanvasOverlay.swift */; };
+		668A5D6F2C265D7F00282BA5 /* PoseViewHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A5D6E2C265D7F00282BA5 /* PoseViewHUD.swift */; };
+		B7ECB8001F5AFC86C2B0B530 /* Pods_TFLiteMovement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C416BDF2A42E1046B4FB1D /* Pods_TFLiteMovement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		668A5D0F2C24D39B00282BA5 /* TFLiteMovement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFLiteMovement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A5D122C24D39B00282BA5 /* TFLiteMovementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteMovementApp.swift; sourceTree = "<group>"; };
-		668A5D142C24D39B00282BA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		668A5D142C24D39B00282BA5 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		668A5D162C24D39C00282BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668A5D192C24D39C00282BA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		668A5D2E2C24ED1800282BA5 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		668A5D332C24EEAB00282BA5 /* PoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseView.swift; sourceTree = "<group>"; };
+		668A5D352C24EED600282BA5 /* PoseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDataModel.swift; sourceTree = "<group>"; };
+		668A5D4C2C26073500282BA5 /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		668A5D4D2C26073500282BA5 /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		668A5D4E2C26073500282BA5 /* MoveNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
+		668A5D4F2C26073500282BA5 /* posenet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet.tflite; sourceTree = "<group>"; };
+		668A5D502C26073500282BA5 /* movenet_thunder.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_thunder.tflite; sourceTree = "<group>"; };
+		668A5D512C26073500282BA5 /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
+		668A5D522C26073500282BA5 /* movenet_lightning.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_lightning.tflite; sourceTree = "<group>"; };
+		668A5D532C26073500282BA5 /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		668A5D5C2C262D5400282BA5 /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
+		668A5D5D2C262D5400282BA5 /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
+		668A5D622C262F9200282BA5 /* PoseNetProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetProcessor.swift; sourceTree = "<group>"; };
+		668A5D682C2634C300282BA5 /* PoseViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseViewData.swift; sourceTree = "<group>"; };
+		668A5D6A2C26403100282BA5 /* PoseViewCanvasOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseViewCanvasOverlay.swift; sourceTree = "<group>"; };
+		668A5D6E2C265D7F00282BA5 /* PoseViewHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseViewHUD.swift; sourceTree = "<group>"; };
+		C0A794A695FAD6446D1A90B9 /* Pods-TFLiteMovement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFLiteMovement.release.xcconfig"; path = "Target Support Files/Pods-TFLiteMovement/Pods-TFLiteMovement.release.xcconfig"; sourceTree = "<group>"; };
+		DE873A768ADEED5C9D339759 /* Pods-TFLiteMovement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFLiteMovement.debug.xcconfig"; path = "Target Support Files/Pods-TFLiteMovement/Pods-TFLiteMovement.debug.xcconfig"; sourceTree = "<group>"; };
+		F0C416BDF2A42E1046B4FB1D /* Pods_TFLiteMovement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFLiteMovement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +64,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7ECB8001F5AFC86C2B0B530 /* Pods_TFLiteMovement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B7F201944FDB2F008774051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0C416BDF2A42E1046B4FB1D /* Pods_TFLiteMovement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		668A5D062C24D39B00282BA5 = {
 			isa = PBXGroup;
 			children = (
 				668A5D112C24D39B00282BA5 /* TFLiteMovement */,
 				668A5D102C24D39B00282BA5 /* Products */,
+				A25BA16BE70B14E4DBAFE940 /* Pods */,
+				2B7F201944FDB2F008774051 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +100,10 @@
 		668A5D112C24D39B00282BA5 /* TFLiteMovement */ = {
 			isa = PBXGroup;
 			children = (
-				668A5D122C24D39B00282BA5 /* TFLiteMovementApp.swift */,
-				668A5D142C24D39B00282BA5 /* ContentView.swift */,
+				668A5D312C24EE9100282BA5 /* UI */,
+				668A5D302C24EE7B00282BA5 /* App */,
+				668A5D212C24E94D00282BA5 /* MLModels */,
+				668A5D202C24E94700282BA5 /* Core */,
 				668A5D162C24D39C00282BA5 /* Assets.xcassets */,
 				668A5D182C24D39C00282BA5 /* Preview Content */,
 			);
@@ -67,6 +118,118 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		668A5D202C24E94700282BA5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D442C24F00600282BA5 /* Extensions */,
+				668A5D2B2C24E9E800282BA5 /* Camera */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		668A5D212C24E94D00282BA5 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D4B2C26072200282BA5 /* TFLite */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		668A5D2B2C24E9E800282BA5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D142C24D39B00282BA5 /* CameraView.swift */,
+				668A5D2E2C24ED1800282BA5 /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		668A5D302C24EE7B00282BA5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D122C24D39B00282BA5 /* TFLiteMovementApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		668A5D312C24EE9100282BA5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D322C24EE9600282BA5 /* Pose */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		668A5D322C24EE9600282BA5 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D672C2634B500282BA5 /* DataModel */,
+				668A5D662C2634B100282BA5 /* View */,
+				668A5D652C2634AC00282BA5 /* Model */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		668A5D442C24F00600282BA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D5C2C262D5400282BA5 /* CVPixelBuffer+TFLite.swift */,
+				668A5D5D2C262D5400282BA5 /* Data+TFLite.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		668A5D4B2C26072200282BA5 /* TFLite */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D522C26073500282BA5 /* movenet_lightning.tflite */,
+				668A5D502C26073500282BA5 /* movenet_thunder.tflite */,
+				668A5D4E2C26073500282BA5 /* MoveNet.swift */,
+				668A5D512C26073500282BA5 /* PoseConfig.swift */,
+				668A5D4D2C26073500282BA5 /* PoseData.swift */,
+				668A5D532C26073500282BA5 /* PoseEstimator.swift */,
+				668A5D4C2C26073500282BA5 /* PoseNet.swift */,
+				668A5D4F2C26073500282BA5 /* posenet.tflite */,
+				668A5D622C262F9200282BA5 /* PoseNetProcessor.swift */,
+			);
+			path = TFLite;
+			sourceTree = "<group>";
+		};
+		668A5D652C2634AC00282BA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D682C2634C300282BA5 /* PoseViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		668A5D662C2634B100282BA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D332C24EEAB00282BA5 /* PoseView.swift */,
+				668A5D6A2C26403100282BA5 /* PoseViewCanvasOverlay.swift */,
+				668A5D6E2C265D7F00282BA5 /* PoseViewHUD.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		668A5D672C2634B500282BA5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				668A5D352C24EED600282BA5 /* PoseDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A25BA16BE70B14E4DBAFE940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE873A768ADEED5C9D339759 /* Pods-TFLiteMovement.debug.xcconfig */,
+				C0A794A695FAD6446D1A90B9 /* Pods-TFLiteMovement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 668A5D1D2C24D39C00282BA5 /* Build configuration list for PBXNativeTarget "TFLiteMovement" */;
 			buildPhases = (
+				2EAA5A5A5252906996801C2B /* [CP] Check Pods Manifest.lock */,
 				668A5D0B2C24D39B00282BA5 /* Sources */,
 				668A5D0C2C24D39B00282BA5 /* Frameworks */,
 				668A5D0D2C24D39B00282BA5 /* Resources */,
@@ -125,20 +289,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668A5D5A2C26073500282BA5 /* movenet_lightning.tflite in Resources */,
 				668A5D1A2C24D39C00282BA5 /* Preview Assets.xcassets in Resources */,
+				668A5D572C26073500282BA5 /* posenet.tflite in Resources */,
 				668A5D172C24D39C00282BA5 /* Assets.xcassets in Resources */,
+				668A5D582C26073500282BA5 /* movenet_thunder.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EAA5A5A5252906996801C2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFLiteMovement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		668A5D0B2C24D39B00282BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668A5D152C24D39B00282BA5 /* ContentView.swift in Sources */,
+				668A5D602C262D5400282BA5 /* Data+TFLite.swift in Sources */,
+				668A5D5B2C26073500282BA5 /* PoseEstimator.swift in Sources */,
+				668A5D2F2C24ED1800282BA5 /* CameraManager.swift in Sources */,
+				668A5D632C262F9200282BA5 /* PoseNetProcessor.swift in Sources */,
+				668A5D152C24D39B00282BA5 /* CameraView.swift in Sources */,
+				668A5D6B2C26403100282BA5 /* PoseViewCanvasOverlay.swift in Sources */,
+				668A5D5F2C262D5400282BA5 /* CVPixelBuffer+TFLite.swift in Sources */,
+				668A5D542C26073500282BA5 /* PoseNet.swift in Sources */,
+				668A5D692C2634C300282BA5 /* PoseViewData.swift in Sources */,
+				668A5D342C24EEAB00282BA5 /* PoseView.swift in Sources */,
+				668A5D552C26073500282BA5 /* PoseData.swift in Sources */,
+				668A5D562C26073500282BA5 /* MoveNet.swift in Sources */,
+				668A5D592C26073500282BA5 /* PoseConfig.swift in Sources */,
+				668A5D362C24EED600282BA5 /* PoseDataModel.swift in Sources */,
 				668A5D132C24D39B00282BA5 /* TFLiteMovementApp.swift in Sources */,
+				668A5D6F2C265D7F00282BA5 /* PoseViewHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +472,7 @@
 		};
 		668A5D1E2C24D39C00282BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE873A768ADEED5C9D339759 /* Pods-TFLiteMovement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,11 +482,11 @@
 				DEVELOPMENT_TEAM = WP95535JP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Preview pose estimations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +502,7 @@
 		};
 		668A5D1F2C24D39C00282BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A794A695FAD6446D1A90B9 /* Pods-TFLiteMovement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,11 +512,11 @@
 				DEVELOPMENT_TEAM = WP95535JP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Preview pose estimations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
